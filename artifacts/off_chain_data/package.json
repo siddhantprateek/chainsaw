@@ -1,0 +1,25 @@
+{
+  "name": "off_chain_data",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^10.0.0",
+    "nyc": "^15.1.0",
+    "sinon": "^14.0.1",
+    "sinon-chai": "^3.7.0"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "fabric-ca-client": "^2.2.15",
+    "fabric-network": "^2.2.15",
+    "mongodb": "^4.10.0"
+  }
+}
