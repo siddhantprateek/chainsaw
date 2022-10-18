@@ -35,4 +35,41 @@ contract DicomMetaData {
         _SeriesDate = _SeriesDated;
         _SeriesNumber = _SeriesNumbered;
     }
+
+    function getManufacturer() external view returns(string memory){
+        return _Manufacturer;
+    }
+
+    function getSeriesTime() external view returns(string memory){
+        return _SeriesTime;
+    }
+
+    function getPatientName() external view returns(string memory){
+        return _PatientName;
+    }
+
+    function getIntituteName() external view returns(string memory){
+        return _InstitutionName;
+    }
+
+    function getPhysicianName() external view returns(string memory){
+        return _PhysicianName;
+    }
+
+    function getStudyDescription() external view returns(string memory) {
+        return _StudyDescription;
+    }
+
+    function getStudyDate() external view returns(string memory) {
+        return _StudyDate;
+    }
+
+    function getSeriesDate() external view returns(string memory) {
+        return _SeriesDate;
+    }
+
+    function getSeriesNumber() external view returns(uint){
+        return _SeriesNumber;
+    }
+
 }
