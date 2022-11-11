@@ -1914,12 +1914,12 @@
     "2018": {
       "events": {},
       "links": {},
-      "address": "0x338F940F4231662Dd9a689DdC4691450de932Be5",
-      "transactionHash": "0x6103099c9b0f206148bb7e4e674ba99c51c206ef9e3e913b15e0df8e4197104f"
+      "address": "0x6023FF0A8203ea32E737819B301D1672Dd2ECBE0",
+      "transactionHash": "0x325da57439d65e711ae4650cc837042843c7abf12dc50e88824709e118fe1309"
     }
   },
   "schemaVersion": "3.4.10",
-  "updatedAt": "2022-11-05T13:04:18.308Z",
+  "updatedAt": "2022-11-11T13:23:50.641Z",
   "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",

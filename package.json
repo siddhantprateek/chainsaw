@@ -7,7 +7,12 @@
     "test": "test"
   },
   "scripts": {
-    "besu": "besu --network=dev --miner-enabled --miner-coinbase=0xfe3b557e8fb62b89f4916b721be55ceb828dbd73 --rpc-http-cors-origins='all' --host-allowlist='*' --rpc-ws-enabled --rpc-http-enabled --data-path=/tmp/tmpDatdir",
+    "besu:docker": "docker run -p 8545:8545 --mount type=bind,source=/tmp/besu/dev,target=/var/lib/besu hyperledger/besu:latest --miner-enabled --miner-coinbase fe3b557e8fb62b89f4916b721be55ceb828dbd73 --rpc-http-enabled --rpc-http-cors-origins=\"all\" --host-allowlist=\"*\" --network=dev --data-path=/var/lib/besu",
+    "besu:test": "besu --config-file=./besu_conf/besu_test_conf.toml",
+    "besu:ropsten": "besu  --network=ropsten --rpc-http-enabled --rpc-http-cors-origins 'http://remix.ethereum.org'",
+    "besu:rinkeby": "besu --network=rinkeby --data-path=<path>/<rinkebydata-path>",
+    "besu:goerli": "besu --network=goerli --data-path=<path>/<goerlidata-path>",
+    "besu:main": "besu --rpc-http-enabled",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -3,5 +3,6 @@
 
 ### Tech Stack
 
-- Go
-- Hyperledger Fabric
+- Typescript/Javascript
+- Solidity
+- Hyperledger Besu
