@@ -1,6 +1,6 @@
 import pydicom
 
-dataset = pydicom.dcmread("./assets/CT-MONO2-16-ankle.dcm")
+dataset = pydicom.dcmread("./src/assets/CT-MONO2-16-ankle.dcm")
 
 # print(dataset)
 
@@ -15,3 +15,4 @@ jsondata = {
     "SeriesDate": str(dataset.SeriesDate),
     "SeriesNumber": 123
     }
+
