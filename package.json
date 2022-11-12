@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/siddhantprateek/chainsaw#readme",
   "dependencies": {
+    "@openzeppelin/contracts-upgradeable": "^4.8.0",
     "@truffle/hdwallet-provider": "^2.1.1"
   }
 }
