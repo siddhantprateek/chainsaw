@@ -28,6 +28,10 @@ const HDProvider = new HDWalletProvider(
 module.exports = {
   contracts_directory: "./contracts",
   contracts_build_directory: "./client/src/build/contracts",
+  
+  // dashboard: {
+  //   port: 24012,
+  // },
   networks: {
     development: {
      host: "127.0.0.1",   
