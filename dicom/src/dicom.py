@@ -1,12 +1,12 @@
 import pydicom
 
 # read all the training files
-def readAllDicomFiles():
-    files = []
-    with open('/test_file.txt') as f:
-        lines  = f.readlines()
-        files.append(str(lines))
-    return files    
+# def readAllDicomFiles():
+#     files = []
+#     with open('/test_file.txt') as f:
+#         lines  = f.readlines()
+#         files.append(str(lines))
+#     return files    
 
 # dataset = pydicom.dcmread("./src/assets/CT-MONO2-16-ankle.dcm")
 
@@ -17,17 +17,17 @@ def process_dicom(dicom_src: str):
     return dicom_data
 
 
-if __name__ == '__main__':
+# if __name__ == '__main__':
 
     # @desp: read all the dicom files and generated metadata corresponding to it
     # file_collection = readAllDicomFiles()
     # for file in file_collection:
     #     dataset = process_dicom(f'./test_files/${file}')
 
-    dataset = process_dicom("./train/5.dcm")
+dataset = process_dicom("./train/1.dcm")
 
 
-    jsondata = {
+jsondata = {
     "Manufacturer": str(dataset.Manufacturer),
     "SeriesTime": str(dataset.SeriesTime),
     "PatientName": str(dataset.PatientName),
@@ -39,4 +39,4 @@ if __name__ == '__main__':
     "SeriesNumber": dataset.SeriesNumber
     }
     
-    rawdata = dict(dataset)
+    # rawdata = dict(dataset)
