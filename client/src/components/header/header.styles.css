@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.logo-green {
+    background-color: #2DE799;
+    padding: .2rem;
+}
+
+.mid ul{
+    display: flex;
+    list-style: none;
+}
+
+.mid li {
+    margin: 0 3rem;
+    font-weight: 500;
+}
+
+.left, .mid, .right {
+    padding: .8rem 0;
+}
+
+.right {
+    background-color: #2DE799;
+    width: 8rem;
+    text-align: center;
+    font-weight: 500;
+    height: 3.9rem;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.connect-btn {
+    cursor: pointer;
+}
