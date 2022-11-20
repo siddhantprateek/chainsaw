@@ -40,6 +40,8 @@ module.exports = {
     },
     // Hyperledger Besu network configuration
     besu: {
+      gasLimit: "0x47b760",
+      gas: "0x1ffffffffffffe",
       provider: HDProvider,
       network_id: "*",
     }
