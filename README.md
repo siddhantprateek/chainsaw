@@ -4,6 +4,7 @@
 ### Tech Stack
 
 - Typescript/Javascript
+- GraphQL
 - Solidity
 - Hyperledger Besu
 - Tessera - Configuring a network that supports private transactions requires starting a Tessera node for each Hyperledger Besu node.
