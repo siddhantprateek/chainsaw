@@ -20,6 +20,7 @@
 - [x] Permissioned Based Network
 - [ ] Create UI for user interaction
 - [x] Zero-Fees Transaction
+- [ ] Continous Delivery / Integration 
 
 
 
