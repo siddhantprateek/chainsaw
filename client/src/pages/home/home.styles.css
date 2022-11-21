@@ -2,3 +2,80 @@
     display: flex;
     justify-content: center;
 }
+
+.hr-container-2, .hr-container-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr-container-2 {
+    flex-wrap: wrap;
+}
+
+.hr-container-3 {
+    flex-wrap: wrap-reverse;
+}
+
+.p-content {
+    padding: 0 2rem;
+    font-size: 2.2rem;
+    width: 30rem;
+}
+
+.on-chain-img {
+    height: 30rem;
+}
+
+.secure-lock {
+    height: 30rem;
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    margin-top: 25rem;
+    grid-gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+.service-header {
+    padding: 2rem 0;
+    height: 30rem;
+    text-align: center;
+    background-color: #F2F2F2;
+    position: absolute;
+
+    z-index: -1;
+    left: 0;
+    width: 100%;
+}
+
+.service-header h1{
+    font-size: 3rem;
+    font-weight: 400;
+}
+
+
+.brown-bx {
+    height: 17rem;
+    background-color: #232323;
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    width: 100%;
+}
+
+.hero-area {
+    margin-bottom: 15rem;
+}
+
+.p-content-white {
+    color: white;
+
+}
+
+.hr-container-3 {
+    margin-bottom: 10rem;
+}
