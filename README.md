@@ -10,6 +10,18 @@
 - Tessera - Configuring a network that supports private transactions requires starting a Tessera node for each Hyperledger Besu node.
 - To create privacy-enabled network, have used IBFT 2.0
 
+## User Stories
+
+- [ ] Grafana Loki Monitoring
+- [x] Hyperledger Fabric -> Hyperledger Besu
+- [ ] Vulnerability Check
+- [x] Generating dicom Metadata and storing in Private network
+- [x] Privacy Enabled Network
+- [x] Permissioned Based Network
+- [ ] Create UI for user interaction
+- [x] Zero-Fees Transaction
+
+
 
 ### Design
 
