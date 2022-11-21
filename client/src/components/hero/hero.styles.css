@@ -1,8 +1,23 @@
 .hero-container {
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap-reverse;
 }
 .hero-image {
     height: 30rem;
+}
+
+.hero-left-content h1 {
+    font-size: 5rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+}
+
+.green-box {
+    background-color: #2DE799;
+    transform: rotate(-3deg);
+    width: fit-content;
+    padding: 1rem;
 }
