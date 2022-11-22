@@ -3,6 +3,7 @@ import truffleContract from 'truffle-contract';
 import * as DicomArtifacts from '../../../client/src/build/contracts/DiacomContract.json';
 import web3 from "../config/utility";
 import { TokenTransferDto } from './dto/token-transfer.dto';
+import axios from "axios";
 
 const DicomContract = truffleContract(DicomArtifacts);
 DicomContract.setProvider(web3.currentProvider);
@@ -70,4 +71,15 @@ export class DicomService {
         return resp;
       }
 
+      async contractInteraction(): Promise<any> {
+        try {
+          const instance = await DicomContract.deployed();
+          const response = await axios.get('http://127.0.0.1:5000/data')
+          return response.data
+        }catch(error){
+          console.error(error);
+          throw new BadRequestException({ description: error.message });
+        }
+        return "";
+      }
 }

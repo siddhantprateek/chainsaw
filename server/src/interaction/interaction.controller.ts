@@ -1,9 +1,14 @@
 import { Controller, Get, Post, Body, ValidationPipe, UsePipes, Param } from '@nestjs/common';
-// import { InteractionService } from './interaction.service';
+import { DicomService } from './interaction.service';
 
 
-@Controller('/')
+@Controller('/v1')
 export class InteractionController {
-    // constructor(private readonly appService: InteractionService);
+    constructor(private readonly interactService: DicomService) {}
+
+    @Get('/data')
+    async getDicomData(): Promise<any> {
+        return await this.interactService.contractInteraction();
+    }
     
 }
