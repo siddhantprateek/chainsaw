@@ -1,0 +1,17 @@
+.report-analysis{
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.report-title{
+    font-size: x-large;
+    font-weight: 600;
+}
+.title-items{
+    display: flex;
+}
+.sidetext{
+    border-left: 2px solid #B0B0B0;
+}
