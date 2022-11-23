@@ -1,0 +1,43 @@
+.sidebar{
+    padding: 2rem;
+    width: 20rem;
+    height: 100vh;
+    background-color: #F2F2F2;
+}
+
+.profile{
+    display: flex;
+    padding: 1rem 0;
+}
+.profile-image{
+    height: 4rem;
+}
+.profile-text{
+    padding: 0 1rem;
+}
+.title{
+    font-size: 1.4rem;
+}
+.sub{
+    color: gray;
+}
+.sidebar-items{
+    padding: 1rem;
+}
+.sidebar-items ul{
+    list-style: none;
+}
+.sidebar-items li{
+    display: flex;
+    align-items: center;
+}
+.items{
+    border-radius: .5rem;
+    transition: all .2s;
+}
+.items img{
+    padding: 1rem;
+}
+.items:hover{
+    background-color: #CDCFCE;
+}
