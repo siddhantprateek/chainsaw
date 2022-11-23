@@ -1,0 +1,28 @@
+.wide{
+    height: 10rem;
+    width: 25rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    background-size: cover;
+    padding: 1rem;
+}
+.wide-title{
+    font-size: large;
+}
+.wide-sub{
+    font-size: small;
+}
+.wide-button{
+    height: 1.5rem;
+    padding: .3rem;
+    font-size: x-small;
+    background: none;
+    border: 1px solid black;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.wide-button:hover{
+    background-color: black;
+    color: white;
+}
