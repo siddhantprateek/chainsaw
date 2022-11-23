@@ -1,6 +1,6 @@
 import { Injectable, BadRequestException } from "@nestjs/common";
-import truffleContract from 'truffle-contract';
-import * as DicomArtifacts from '../../../client/src/build/contracts/DiacomContract.json';
+import * as truffleContract from '@truffle/contract';
+import * as DicomArtifacts from '../../build/contracts/DiacomContract.json';
 import web3 from "../config/utility";
 import { TokenTransferDto } from './dto/token-transfer.dto';
 import axios from "axios";
@@ -8,8 +8,24 @@ import axios from "axios";
 const DicomContract = truffleContract(DicomArtifacts);
 DicomContract.setProvider(web3.currentProvider);
 
+interface IDicomData {
+  Manufacturer: string;
+  SeriesTime: string;
+  PatientName: string;
+  InstitutionName: string;
+  PhysicianName: string;
+  StudyDescription: string;
+  StudyDate: string;
+  SeriesDate: string;
+  SeriesNumber: Number;
+}
+
+
 @Injectable()
-export class DicomService {
+export class InteractionService {    
+    getNest(): string {
+        return 'Welcome to Nest Server';
+    }
 
     async getBalance(account: string): Promise<string> {
         try {
@@ -71,15 +87,72 @@ export class DicomService {
         return resp;
       }
 
-      async contractInteraction(): Promise<any> {
+      async contractInteraction(account: string): Promise<string> {
         try {
           const instance = await DicomContract.deployed();
           const response = await axios.get('http://127.0.0.1:5000/data')
-          return response.data
+        //   let contractData = response.data
+          const result = await instance.set.call(
+            "abd",
+            "abd",
+            "abd",
+            "abd",
+            "abd",
+            "abd",
+            "abd",
+            "abd",
+            123,
+            { from: account }
+        )
+          
+
+          return result
         }catch(error){
           console.error(error);
           throw new BadRequestException({ description: error.message });
         }
-        return "";
+
+        // return "";
+      }
+
+      async getTransactionValues(): Promise<IDicomData> {
+        try {
+          const instance = await DicomContract.deployed();
+          let physicianName = await instance.getPhyscianName();
+          let Manufacturer = await instance.getManufacturer();
+          let patientName = await instance.getPatientName();
+          let institutionName = await instance.getInstitutionName();
+          let seriesNumber = await instance.getSeriesNumbe();
+          let seriesTime = await instance.getSeriesTime();
+          let seriesDate = await instance.getSeriesDate();
+          let studyDate = await instance.getStudyDate();
+          let description = await instance.getStudyDescription();
+          
+          return {
+            PhysicianName: physicianName,
+            Manufacturer: Manufacturer,
+            PatientName: patientName,
+            InstitutionName: institutionName,
+            SeriesNumber: seriesNumber,
+            SeriesTime: seriesTime,
+            SeriesDate: seriesDate,
+            StudyDate: studyDate,
+            StudyDescription: description
+          };
+        }catch(error){
+          console.error(error);
+          throw new BadRequestException({ description: error.message });        
+        }
+      }
+
+
+      async contractABI(): Promise<string> {
+        try {
+            const instance = await DicomContract.deployed()
+            return instance
+        }catch(error){
+            console.error(error);
+            throw new BadRequestException({ description: error.message });   
+        }
       }
 }

@@ -27,7 +27,7 @@ const HDProvider = new HDWalletProvider(
 
 module.exports = {
   contracts_directory: "./contracts",
-  contracts_build_directory: "./client/src/build/contracts",
+  contracts_build_directory: "./build/contracts",
   
   // dashboard: {
   //   port: 24012,
@@ -40,10 +40,10 @@ module.exports = {
     },
     // Hyperledger Besu network configuration
     besu: {
-      gasLimit: "0x47b760",
-      gas: "0x1ffffffffffffe",
       provider: HDProvider,
       network_id: "*",
+      // gasLimit: "0x47b760",
+      // gas: "0x1ffffffffffffe",
     }
   },
   // Configure your compilers

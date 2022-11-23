@@ -27,11 +27,8 @@
   },
   "homepage": "https://github.com/siddhantprateek/chainsaw#readme",
   "dependencies": {
-    "@nestjs/apollo": "^10.1.6",
-    "@nestjs/graphql": "^10.1.6",
     "@openzeppelin/contracts-upgradeable": "^4.8.0",
-    "@truffle/hdwallet-provider": "^2.1.1",
-    "apollo-server-express": "^3.11.1",
-    "graphql": "^16.6.0"
+    "@truffle/contract": "^4.6.7",
+    "@truffle/hdwallet-provider": "^2.1.1"
   }
 }
