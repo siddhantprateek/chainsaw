@@ -7,7 +7,13 @@
     margin-bottom: 1rem;
     display: flex;
     flex-direction: column;
+    cursor: pointer;
+    transition: all .2s;
     justify-content: space-between;
+}
+
+.reportcard:hover {
+    background-color: #dadada;
 }
 
 .report-title {

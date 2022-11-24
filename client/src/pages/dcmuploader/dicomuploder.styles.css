@@ -1,0 +1,27 @@
+.dicom-uploader {
+    display: flex;
+    background-color: #F2f2f2;
+    padding: 1rem;
+}
+
+.uploader-section {
+    border: 4px dotted black;
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.upload-btn {
+    border: 2px dotted black;
+    padding: 30rem 10rem;
+    cursor: pointer;
+}
+
+.editor-section {
+    width: 30rem;
+    margin-left: 2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: white;
+}

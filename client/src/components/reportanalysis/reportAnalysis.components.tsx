@@ -13,7 +13,6 @@ const UserProfile = () => (
 const ReportAnalysis = () => {
   return (
     <div className='report-analysis'>
-
       <div className="report-text">
         <h2 className="report-title">Report Analysis</h2>
         <div className="grant-section">
@@ -22,14 +21,13 @@ const ReportAnalysis = () => {
             <UserProfile />
             <UserProfile />
           </div>
-          <p className="sidetext">Granted Access</p>
+          <p className="sidetext">Granted<br/> Access</p>
         </div>
       </div>
       <div className='cards'>
         <Reportwide />
         <Reportsquare />
       </div>
-
     </div>
   )
 }

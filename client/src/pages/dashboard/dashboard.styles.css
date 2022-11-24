@@ -1,3 +1,25 @@
+.dashboard {
+    background-color: #F2F2F2;
+    padding: 1rem;
+}
+
 .all-components {
     display: flex;
+}
+
+.reports {
+    padding: 1rem 2rem;
+}
+
+.report-section-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.report-section-header p {
+    text-decoration: underline;
+    cursor: pointer;
 }

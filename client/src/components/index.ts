@@ -6,3 +6,4 @@ export { default as Sidebar } from './sidebar/sidebar.components';
 export { default as ReportAnalysis } from './reportanalysis/reportAnalysis.components';
 export { default as Reportwide } from './reportwide/reportwide.components';
 export { default as Reportsquare } from './reportsquare/reportsquare.components';
+export { default as ReportCard } from './reportcard/reportcard.components';

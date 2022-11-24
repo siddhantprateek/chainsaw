@@ -20,6 +20,9 @@
 }
 .title-items img{
     border-radius: 4rem;
+    height: 3.5rem;
+    width: 3.5rem;
+
     border: 2px solid black;
     transition: all .5s;
 }
@@ -41,4 +44,9 @@
 .grant-section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.sidetext {
+    padding: 1rem;
 }

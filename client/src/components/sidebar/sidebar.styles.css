@@ -3,6 +3,9 @@
     width: 20rem;
     height: 100vh;
     background-color: #F2F2F2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .profile{
@@ -39,5 +42,12 @@
     padding: 1rem;
 }
 .items:hover{
+    cursor: pointer;
     background-color: #CDCFCE;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
