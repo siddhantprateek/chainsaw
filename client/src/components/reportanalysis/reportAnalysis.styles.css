@@ -1,9 +1,11 @@
 .report-analysis{
-    margin-top: 3rem;
+    background-color: white;
+    /* margin-top: 1rem; */
     padding: 1rem 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border-radius: 10px;
 }
 .report-title{
     font-size: x-large;
@@ -11,7 +13,32 @@
 }
 .title-items{
     display: flex;
+    position: relative;
+    margin-left: -2rem;
+    cursor: pointer;
+
 }
+.title-items img{
+    border-radius: 4rem;
+    border: 2px solid black;
+    transition: all .5s;
+}
+
+.title-items img:hover{
+    
+    border: 2px solid rgb(151, 255, 151);
+}
+
 .sidetext{
     border-left: 2px solid #B0B0B0;
+}
+
+.granted-user {
+    display: flex;
+    margin-left: 2rem;
+}
+
+.grant-section {
+    display: flex;
+    justify-content: space-between;
 }
