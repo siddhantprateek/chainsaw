@@ -13,14 +13,13 @@
     font-size: small;
 }
 .wide-button{
-    height: 1.5rem;
-    padding: .3rem;
+    padding: .8rem 1rem;
     font-size: x-small;
     background: none;
     border: 1px solid black;
     margin-top: 3rem;
     cursor: pointer;
-    transition: 1.5s;
+    transition: all .5s;
 }
 .wide-button:hover{
     background-color: black;

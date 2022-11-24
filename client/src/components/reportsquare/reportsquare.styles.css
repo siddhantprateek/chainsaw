@@ -10,14 +10,14 @@
     padding: 1rem;
 }
 .square-button{
-    height: 1.5rem;
-    padding: .3rem;
+    /* height: 1.5rem; */
+    padding: .8rem 1rem;
     font-size: x-small;
     background: none;
     border: 1px solid black;
     margin-top: 7rem;
     cursor: pointer;
-    transition: 1.5s;
+    transition: all .5s;
 }
 .square-button:hover{
     background-color: black;
