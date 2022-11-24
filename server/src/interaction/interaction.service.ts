@@ -92,21 +92,19 @@ export class InteractionService {
           const instance = await DicomContract.deployed();
           const response = await axios.get('http://127.0.0.1:5000/data')
         //   let contractData = response.data
-          const result = await instance.set.call(
-            "abd",
-            "abd",
-            "abd",
-            "abd",
-            "abd",
-            "abd",
-            "abd",
-            "abd",
+          return await instance.set(
+            "asadbd",
+            "asdadbd",
+            "absdad",
+            "absad",
+            "asabd",
+            "asabd",
+            "aasbd",
+            "asadbd",
             123,
             { from: account }
         )
-          
-
-          return result
+        
         }catch(error){
           console.error(error);
           throw new BadRequestException({ description: error.message });
