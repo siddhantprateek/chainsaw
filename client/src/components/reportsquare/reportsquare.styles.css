@@ -1,0 +1,25 @@
+.square{
+    display: flex;
+}
+.squarecard{
+    height: 15rem;
+    width: 12rem;
+    margin-right: 1rem;
+    border-radius: .5rem;
+    background-size: cover;
+    padding: 1rem;
+}
+.square-button{
+    height: 1.5rem;
+    padding: .3rem;
+    font-size: x-small;
+    background: none;
+    border: 1px solid black;
+    margin-top: 7rem;
+    cursor: pointer;
+    transition: 1.5s;
+}
+.square-button:hover{
+    background-color: black;
+    color: white;
+}

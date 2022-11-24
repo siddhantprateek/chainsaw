@@ -1,8 +1,7 @@
 import React from 'react'
-
 const Reportcard = () => {
   return (
-    <div>Reportcard</div>
+    <div></div>
   )
 }
 

@@ -1,8 +1,14 @@
 import React from 'react'
-
+import { Sidebar, ReportAnalysis } from '../../components'
+import './dashboard.styles.css'
 const Dashboard = () => {
   return (
-    <div>Dashboard</div>
+    <div>
+      <div className="all-components">
+      <Sidebar/>
+      <ReportAnalysis/>      
+      </div>
+    </div>
   )
 }
 
