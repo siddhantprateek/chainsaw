@@ -1,5 +1,10 @@
 # chainsaw
 
+![](./assets/chainsaw.png)
+
+## Architecture
+
+![](./assets/dicomARCH.png)
 
 ### Tech Stack
 
