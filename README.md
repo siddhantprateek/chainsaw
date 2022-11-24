@@ -1,10 +1,6 @@
-# chainsaw
+<h1 align="center">chainsaw</h1>
 
 ![](./assets/chainsaw.png)
-
-## Architecture
-
-![](./assets/dicomARCH.png)
 
 ### Tech Stack
 
@@ -14,6 +10,12 @@
 - Hyperledger Besu
 - Tessera - Configuring a network that supports private transactions requires starting a Tessera node for each Hyperledger Besu node.
 - To create privacy-enabled network, have used IBFT 2.0
+
+
+## Architecture
+
+![](./assets/dicomARCH.png)
+
 
 ## User Stories
 
